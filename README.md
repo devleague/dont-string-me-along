@@ -1,10 +1,10 @@
 # Don't String Me Along 
 
-Don't String Me Along
+Don't String Me Along is a coding challenge that is sometimes great and sometimes makes you wish you never met.
 
 ## Description
 
-In this exercise you must will solve a number of challenges for dealing with strings in various ways.
+In this exercise you must will solve a number of challenges for dealing with manipulating and searching strings in various ways.
 
 ## Objectives
 
