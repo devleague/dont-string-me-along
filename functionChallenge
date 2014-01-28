@@ -23,9 +23,26 @@ function challengeThree(name){
 	return newName;
 }
 
-funtion circularVar(first, second){
-	for()
-
+function circularVar(first, second){
+	var cFirst = first.split("");
+	var cSecond = second.split("");
+	var isTrue = false;
+	var placeholder = 0;
+		
+	for(var x = 0; x < second.length; x++){
+		if(cFirst[0] == second[x]){
+			for(var i = 0; i < first.length; i++){
+				if(first[i] == second [(x+i)%second.length]){
+					isTrue = true;
+				}
+				else{
+                    isTrue = false;
+                    break;
+				}
+			}
+		}
+	}	
+	return isTrue;
 }
 
 function palindrome(word){
@@ -35,7 +52,7 @@ function palindrome(word){
 	}
     for(var i = 0; i< word.length; i++){
 
-		if(check(word[i], word[wLength-1])){
+		if(check(word[i], charAt(word.length-1))){
 			isTrue = true;
 		}
 		else{
