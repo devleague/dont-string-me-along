@@ -1,0 +1,51 @@
+function missingNums(number){
+	var str = number;
+	
+	for(var i = 0; i < number.length(); i++){
+		var checkNum = str.substring(i,i+1);
+		if(checkNum == 1 || checkNum == 2 || checkNum == 3 || checkNum ==4 || checkNum == 5 || checkNum == 6 || checkNum == 7 || checkNum == 8 || checkNum ==9){
+
+		} 
+		else{
+			str = str + ", " + "checkNum";
+		}
+
+	}
+
+
+
+}
+
+function challengeThree(name){
+	var splitName = name.split(" "); 
+	var newName = splitName[1] + ", " + splitName[0];
+
+	return newName;
+}
+
+funtion circularVar(first, second){
+	for()
+
+}
+
+function palindrome(word){
+	var wLength = word.length;
+	if( word.length == 1 ){
+		return true;
+	}
+    for(var i = 0; i< word.length; i++){
+
+		if(check(word[i], word[wLength-1])){
+			isTrue = true;
+		}
+		else{
+			isTrue = false;
+			break;
+		}
+	}
+    
+	
+	return isTrue;
+}
+
+alert(palindrome("racecar"));
