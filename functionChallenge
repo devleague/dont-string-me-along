@@ -23,14 +23,34 @@ function challengeThree(name){
 	return newName;
 }
 
-
+/**
+* challengeFour(first, second)
+*
+* Supply a string and check for it in the second string
+* and make sure that the string is in there
+*
+*
+* variables 
+*
+* string first: the first word to check for
+* string second: a second word to check inside
+*
+* 
+* returns 
+* true or false if the string is there
+*/
 function challengeFour(first, second){
 
+	//set the variable to keep track of how well it matches
 	var isTrue = false;
-		
+	
+	//go through each letter and see if it is right	
 	for(var x = 0; x < second.length; x++){
 		if(first[0] == second[x]){
+	
+			//if it matches start stepping through the next one
 			for(var i = 0; i < first.length; i++){
+				//true: continue checking the string
 				if(first[i] == second [ (x+i) % second.length]){
 					isTrue = true;
 				}
@@ -41,6 +61,7 @@ function challengeFour(first, second){
 			}
 		}
 	}	
+	//return state
 	return isTrue;
 }
 
