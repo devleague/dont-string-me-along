@@ -10,7 +10,7 @@ In this exercise you must will solve a number of challenges for dealing with man
 
 1. Fork this repository to your own GitHub profile and clone to your local machine.
 
-2. Write a function that finds the missing number in the following sequence of numbers "9899100101103104105".
+2. Write a function that finds the missing numbers in the following sequence of numbers "9899100101103104105".
 
 3. Write a function that takes a string of two words as input such as a name and swaps the order of the words with a comma separating the two words. Ex. "Jay Won" => "Won, Jay" Bonus: Use RegEx to solve this problem
 
