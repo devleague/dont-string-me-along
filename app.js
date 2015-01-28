@@ -2,13 +2,14 @@ module.exports = {
 
   findMissingNumbers : function () {
 
-var sequence = "9899100101103104105";
-
+    var sequence = '9899100101103104105';
+    
   },
 
   swapWords : function () {
-var name = "Jay Won";
 
+    var name = 'Jay Won';
+  
   },
 
   twoStrings : function () {
@@ -18,6 +19,7 @@ var name = "Jay Won";
 
   palindrome : function () {
 
+     var input = 'racecar';
 
   }
 };
