@@ -1,0 +1,89 @@
+function missingNums(number){
+	var str = number;
+	
+	for(var i = 0; i < number.length(); i++){
+		var checkNum = str.substring(i,i+1);
+		if(checkNum == 1 || checkNum == 2 || checkNum == 3 || checkNum ==4 || checkNum == 5 || checkNum == 6 || checkNum == 7 || checkNum == 8 || checkNum ==9){
+
+		} 
+		else{
+			str = str + ", " + "checkNum";
+		}
+
+	}
+
+
+
+}
+
+function challengeThree(name){
+	var splitName = name.split(" "); 
+	var newName = splitName[1] + ", " + splitName[0];
+
+	return newName;
+}
+
+/**
+* challengeFour(first, second)
+*
+* Supply a string and check for it in the second string
+* and make sure that the string is in there
+*
+*
+* variables 
+*
+* string first: the first word to check for
+* string second: a second word to check inside
+*
+* 
+* returns 
+* true or false if the string is there
+*/
+function challengeFour(first, second){
+
+	//set the variable to keep track of how well it matches
+	var isTrue = false;
+	
+	//go through each letter and see if it is right	
+	for(var x = 0; x < second.length; x++){
+		if(first[0] == second[x]){
+	
+			//if it matches start stepping through the next one
+			for(var i = 0; i < first.length; i++){
+				//true: continue checking the string
+				if(first[i] == second [ (x+i) % second.length]){
+					isTrue = true;
+				}
+				else{
+                    isTrue = false;
+                    break;
+				}
+			}
+		}
+	}	
+	//return state
+	return isTrue;
+}
+
+
+function palindrome(word){
+	var wLength = word.length;
+	if( word.length == 1 ){
+		return true;
+	}
+    for(var i = 0; i< word.length; i++){
+
+		if(check(word[i], charAt(word.length-1))){
+			isTrue = true;
+		}
+		else{
+			isTrue = false;
+			break;
+		}
+	}
+    
+	
+	return isTrue;
+}
+
+alert(palindrome("racecar"));
